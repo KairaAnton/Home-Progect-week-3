@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.headerNavBar{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #333333;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+}
+
+.headerNavBar > h1 {
+    margin-left: 60px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.3em;
+}
+
+.navBar{
+    min-width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navBar > li {
+    list-style-type: none;
+
+}
+
+.imageBody{
+    min-width: 350px;
+}
+
+.buttonNavBar{
+    height: 40px;
+    width: 120px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+    margin-right: 60px;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 768px){
+
+    .headerNavBar{
+        height: 200px;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: baseline;
+
+    }
+
+    .buttonNavBar{
+        margin-left: 35px;
+    }
+
+    .imageBody{
+        object-fit: none;
+        max-height: 300px;
+    }
+
+    .headerNavBar > h1{
+        margin-left: 35px;
+    }
+}
