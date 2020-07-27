@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+
+<div class="contactFormContainer">
+
+    <h1>Contact form</h1>
+
+    <p>Please fill in your information and we'll be sending your order.</p>
+
+    <form action="">
+        <label>
+            Your name    <input type="text"  placeholder="first name"><input type="text" placeholder="last name">
+        </label>
+
+        <label>
+            Your email   <input type="email"  placeholder="your_mail.com">
+        </label>
+
+        <label>
+            Phone *      <input type="text" maxlength="3" placeholder="000"><input type="text" maxlength="3" placeholder="000"><input type="text" maxlength="4" placeholder="0000">
+        </label>
+
+        <label class="multiselect">
+        Message subject * <select name="subject">
+
+                                    <option value="" disabled selected>Others</option>
+                                    <option value="problem">Problem</option>
+                                    <option value="work">Work</option>
+                                    <option value="invitation">Invitation</option>
+                                    <option value="textbooks">Textbooks</option>
+
+                           </select>
+
+            <label>
+
+                Message <textarea name="" id="" cols="30" rows="10"></textarea>
+
+            </label>
+
+        </label>
+
+    </form>
+
+    <hr>
+
+    <label>
+            <input type="submit" value="SUBMIT FORM">
+    </label>
+
+</div>
+
+
+</body>
+</html>
