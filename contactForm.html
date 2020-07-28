@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Contact Form</title>
     <link rel="stylesheet" href="./CSS/reset.css">
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/stylesForm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -14,45 +15,46 @@
 
     <p>Please fill in your information and we'll be sending your order.</p>
 
-    <form action="">
+    <form action="" class="formContainer">
         <label>
-            Your name    <input type="text"  placeholder="first name"><input type="text" placeholder="last name">
+            Your name  <div class="inputContainer"><input  class="formYourName" type="text"  placeholder="first name"><input  class="formYourName" type="text" placeholder="last name"></div>
         </label>
 
         <label>
-            Your email   <input type="email"  placeholder="your_mail.com">
+            Your email   <div class="inputContainer"><input class="formYourEmail" type="email"  placeholder="your_mail.com"></div>
         </label>
 
         <label>
-            Phone *      <input type="text" maxlength="3" placeholder="000"><input type="text" maxlength="3" placeholder="000"><input type="text" maxlength="4" placeholder="0000">
+            Phone *      <div class="inputContainer"><input class="formPhone" type="number" maxlength="3" placeholder="000"> <input class="formPhone" type="number" maxlength="3" placeholder="000"> <input class="formPhone" type="number" maxlength="4" placeholder="0000"></div>
         </label>
 
-        <label class="multiselect">
-        Message subject * <select name="subject">
+        <label>
+        Message subject * <div class="inputContainer"><select class="multiselect" name="subject">
 
-                                    <option value="" disabled selected>Others</option>
+                                    <option value="" disabled selected>Other</option>
                                     <option value="problem">Problem</option>
                                     <option value="work">Work</option>
                                     <option value="invitation">Invitation</option>
                                     <option value="textbooks">Textbooks</option>
 
-                           </select>
-
-            <label>
-
-                Message <textarea name="" id="" cols="30" rows="10"></textarea>
-
-            </label>
-
+                           </select></div>
         </label>
+
+        <label>
+            Message * <textarea name="" id="massageForm" cols="30" rows="5"></textarea>
+        </label>
+
 
     </form>
 
     <hr>
 
     <label>
-            <input type="submit" value="SUBMIT FORM">
+        <input class="submitButton" type="submit" value="SUBMIT FORM">
     </label>
+
+
+
 
 </div>
 
