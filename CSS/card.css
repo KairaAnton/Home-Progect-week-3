@@ -1,0 +1,86 @@
+:root{
+    --main-color: white;
+    --main-display: flex;
+    --main-position:absolute;
+}
+
+.container{
+    display: var( --main-display);
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 5px;
+}
+
+.cardContainer{
+    display: var( --main-display);
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 180px;
+    width: 340px;
+    border-radius: 7px;
+    background-image: linear-gradient(to right, rgb(235, 173, 153), rgb(235, 169, 153), rgb(236, 165, 153), rgb(236, 160, 153), rgb(237, 156, 153), rgb(237, 152, 153), rgb(238, 148, 153), rgb(238, 144, 153), rgb(239, 140, 153), rgb(239, 135, 153), rgb(240, 131, 153), rgb(240, 127, 153));
+    padding: 50px 50px 35px;
+    font-family: 'Recursive', sans-serif;
+
+}
+
+.childTextOne{
+    font-size: x-large;
+}
+
+.childId{
+    color: var(--main-color);
+    opacity: 0.9;
+}
+
+.ballContainer{
+    position: var(--main-position);
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    opacity: 0.15;
+    background-color: var(--main-color);
+}
+
+.ballOne{
+    margin-top: -60px;
+    margin-left: 265px;
+}
+
+.ballTwo{
+    margin-top: 100px;
+    margin-left: 180px;
+}
+
+.childTextTwo{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    color: var(--main-color);
+}
+
+.childTextThree{
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+img{
+    height: 25px;
+    width: 25px;
+    filter: invert();
+    position: var(--main-position);
+    right: 50px;
+}
+
+#cardContainerTwo{
+    background-image: linear-gradient(to right, rgb(153, 202, 235), rgb(147, 195, 233), rgb(140, 188, 230), rgb(134, 182, 228), rgb(128, 175, 226), rgb(122, 168, 223), rgb(115, 161, 221), rgb(109, 154, 218), rgb(103, 147, 216), rgb(97, 141, 214), rgb(90, 134, 211), rgb(84, 127, 209));
+
+}
+
+#cardContainerThree{
+    background-image: linear-gradient(to right, rgb(153, 228, 235), rgb(145, 227, 229), rgb(136, 225, 224), rgb(128, 224, 218), rgb(119, 223, 212), rgb(111, 222, 207), rgb(102, 220, 201), rgb(94, 219, 196), rgb(85, 218, 190), rgb(77, 217, 184), rgb(68, 215, 179), rgb(60, 214, 173));
+}
