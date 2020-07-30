@@ -1,0 +1,227 @@
+:root{
+    --main-display:inline-block;
+    --main-min-width: 700px;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: 1.5em;
+}
+div{
+    overflow-y: hidden;
+}
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2em;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.5em;
+    line-height: 1.4em;
+    font-weight: bold;
+}
+
+.container1{
+    padding: 120px 150px;
+    display: var(--main-display);
+    text-align: center;
+    color: white;
+    background-image:
+            linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+            url("https://mydaoseo.ru/wp-content/uploads/2018/03/%D0%BA%D0%B0%D0%BA-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D1%82%D1%8C-%D0%B2%D0%B0%D0%BB%D0%B8%D0%B4%D0%BD%D0%BE%D1%81%D1%82%D1%8C-%D0%BA%D0%BE%D0%B4%D0%B0-%D1%81%D0%B0%D0%B9%D1%82%D0%B0.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.containerButton a{
+    background-color: #333333;
+    display: var(--main-display);
+    padding: 17px 35px;
+    border: #666666 solid 0.1px;
+    color: white;
+    text-decoration: none;
+}
+
+.container1 p{
+    margin: 10px 0 27px;
+}
+
+.containerButton{
+    display: var(--main-display);
+}
+
+.containerButton > a:hover{
+    background-color: #eaeaea;
+    color: #333333;
+    transition-duration: 0.4s;
+}
+
+.container2{
+    display: var(--main-display);
+    background-color: #eaeaea;
+    opacity: 0.8;
+    padding: 20px 120px;
+    }
+
+.containerContent{
+
+    column-count: 2;
+    column-gap: 30px;
+    margin: 30px 0 ;
+}
+
+.container3{
+
+    padding: 80px 1em 1em;
+    background-color: #333333;
+    }
+
+.container3 p{
+    margin: 30px 30px 40px;
+    opacity: 0.8;
+    }
+
+.container3 h3{
+    margin: 50px 0;
+    opacity: 0.8;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-weight: bold;
+    }
+
+.containerForCard{
+    display: var(--main-display);
+    height: 500px;
+    width: 275px;
+    margin:0 7px;
+    }
+
+.containerForCardContent{
+    display: var(--main-display);
+    background-color: white;
+    color: black;
+    }
+
+.container4{
+    display: var(--main-display);
+
+    opacity: 0.8;
+    padding: 40px 100px;
+}
+
+.container4 p{
+    margin: 25px 0 40px;
+}
+
+.container5{
+    display: var(--main-display);
+    color: white;
+    }
+
+.childContainer5{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    height: 320px;
+    background-color: #2690d4;
+}
+
+#childContainer5AboutUs{
+    background-color: #333333;
+}
+
+.childContainer5 h2{
+    margin: 40px 0 20px;
+}
+
+.childContainer5 p{
+    margin: 0 30px 30px;
+}
+
+.childContainer5 > a{
+    color: black;
+}
+
+.containerFooter > p > a{
+    color: #2690d4;
+}
+
+footer {
+    display: var(--main-display);
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 35px 30px 25px;
+}
+
+.containerFooter{
+    display: inline-block;
+    flex-wrap: wrap;
+    height: 40px;
+    width: 50%;
+}
+
+img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+
+    :root{
+        --main-display: flex;
+        --main-flex-direction: column;
+        --main-align-items: center;
+
+    }
+
+    div{
+        flex-direction: var(--main-flex-direction);
+        align-items: var(--main-align-items);
+    }
+
+
+.container1{
+    flex-direction: var(--main-flex-direction);
+    align-items: var(--main-align-items);
+}
+
+.container2{
+    flex-direction: var(--main-flex-direction);
+    align-items: var(--main-align-items);
+}
+
+.container3{
+    flex-direction: var(--main-flex-direction);
+    align-items: var(--main-align-items);
+}
+
+.containerWebDevelopment{
+    flex-direction: var(--main-flex-direction);
+    align-items: var(--main-align-items);
+}
+
+
+
+
+}

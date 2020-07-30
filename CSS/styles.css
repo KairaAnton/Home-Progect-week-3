@@ -22,7 +22,7 @@ body{
 }
 
 .navBar{
-    min-width: 400px;
+    min-width: 320px;
     display: flex;
     justify-content: space-evenly;
 }
@@ -33,7 +33,7 @@ body{
 }
 
 .imageBody{
-    min-width: 350px;
+    min-width: 320px;
 }
 
 .buttonNavBar{
