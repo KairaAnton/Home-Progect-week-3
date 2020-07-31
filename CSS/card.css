@@ -4,8 +4,53 @@
     --main-position:absolute;
 }
 
+
+
+
+
+.header > ul{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 60px;
+    background-color: blue;
+}
+
+.header > ul > li{
+    display: flex;
+    height: 100%;
+    transition-duration: 0.5s;
+    width: 100%;
+}
+
+.header > ul > li > a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    padding: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header > ul > li:hover{
+    background-color: #2690d4;
+
+}
+
+
+
+
+
+
+
+
+
+
+
 .container{
     display: var( --main-display);
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -84,3 +129,13 @@ img{
 #cardContainerThree{
     background-image: linear-gradient(to right, rgb(153, 228, 235), rgb(145, 227, 229), rgb(136, 225, 224), rgb(128, 224, 218), rgb(119, 223, 212), rgb(111, 222, 207), rgb(102, 220, 201), rgb(94, 219, 196), rgb(85, 218, 190), rgb(77, 217, 184), rgb(68, 215, 179), rgb(60, 214, 173));
 }
+
+
+@media screen and (max-width: 768px) {
+
+
+    .header > ul{
+        flex-wrap: wrap;
+    }
+}
+

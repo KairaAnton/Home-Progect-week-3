@@ -1,6 +1,6 @@
 
 
-body{
+.background{
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -14,11 +14,41 @@ body{
     font-size: 0.7em;
 }
 
-.contactFormContainer{
-    box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.75);
-    padding: 30px;
+.header > ul{
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 60px;
+    background-color: blue;
 }
 
+.header > ul > li{
+    display: flex;
+    height: 100%;
+    transition-duration: 0.5s;
+    width: 100%;
+}
+
+.header > ul > li > a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    padding: 25px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header > ul > li:hover{
+    background-color: #2690d4;
+
+}
+
+
+.contactFormContainer{
+    box-shadow: 0 0 14px 3px rgba(0,0,0,0.75);
+    padding: 30px;
+}
 
 
 .formContainer{
@@ -83,8 +113,35 @@ p{
     color: white;
     font-weight: bold;
     margin-top: 10px;
+    margin-left: 20%;
+}
+
+.lineContainer{
+    height: 0;
+    width: 100%;
+    border: 0.2px solid white;
 }
 
 input{
     height: 1.5em;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .header > ul{
+        flex-wrap: wrap;
+    }
+
+
+
+    .inputContainer input + input {
+        margin-left: 0;
+    }
+
+  input{
+        display: inline-block;
+        width: 100%;
+    }
 }
