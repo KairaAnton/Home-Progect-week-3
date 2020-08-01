@@ -1,6 +1,5 @@
 
-
-.background{
+.background {
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -14,133 +13,124 @@
     font-size: 0.7em;
 }
 
-.header > ul{
+.contactFormContainer {
     display: flex;
-    justify-content: space-evenly;
-    min-height: 60px;
-    background-color: blue;
-}
-
-.header > ul > li{
-    display: flex;
-    height: 100%;
-    transition-duration: 0.5s;
-    width: 100%;
-}
-
-.header > ul > li > a{
-    display: inline-block;
-    width: 100%;
-    text-decoration: none;
-    padding: 25px;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.header > ul > li:hover{
-    background-color: #2690d4;
-
-}
-
-
-.contactFormContainer{
-    box-shadow: 0 0 14px 3px rgba(0,0,0,0.75);
+    flex-direction: column;
+    max-width: 700px;
+    box-shadow: 0 0 14px 3px rgba(0, 0, 0, 0.75);
     padding: 30px;
 }
 
-
-.formContainer{
+.formContainer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: self-start;
 }
 
-h1{
+.textContainer {
+    min-width: 15%;
+}
+
+h1 {
     font-size: 1.5em;
     font-weight: bold;
 }
 
-p{
+p {
     margin: 20px 0;
 }
 
-.formContainer > label{
-    display: flex;
-    justify-content: space-between;
+.multiselect {
     width: 100%;
-    margin: 6px 0;
-}
-
-.formYourName{
-    width: 47%;
-}
-
-.formYourEmail{
-    width: 97.7%;
-}
-
-.formPhone{
-    width: 29.8%;
-}
-
-.multiselect{
-    width: 99.6%;
+    display: flex;
     height: 2em;
 }
 
-#massageForm{
-    width: 79%;
+.inputContainer {
+    width: 100%;
+    display: flex;
 }
 
-.inputContainer{
-    display: inline-block;
-    width: 80%;
+.childYourName {
+    width: 100%;
+    display: flex;
+    flex: auto;
 }
 
-.inputContainer input + input{
-    margin-left: 10px;
+.textareaContainer{
+    width: 100%;
+    display: flex;
+
 }
 
-.submitButton{
-    width: 80%;
-    height: 1.5em;
-    float: right;
+.childYourName > input {
+    display: flex;
+    flex-grow: inherit;
+
+}
+
+.childYourName input + input {
+    margin-left: 15px;
+}
+
+.childPhone {
+    width: 100%;
+    display: flex;
+   flex: auto;
+}
+
+.formPhone{
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 30%;
+}
+
+.childPhone input + input{
+    margin-left: 15px;
+}
+
+.childYourEmail{
+    display: flex;
+
+    width: 100%;
+
+}
+
+.childYourEmail > input{
+   display: flex;
+    flex-grow: 1;
+}
+
+.buttonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submitButton {
+    display: flex;
+    justify-content: center;
+    height: 2em;
     background: transparent;
     border: 2px solid white;
     color: white;
     font-weight: bold;
     margin-top: 10px;
-    margin-left: 20%;
 }
 
-.lineContainer{
-    height: 0;
-    width: 100%;
-    border: 0.2px solid white;
+input {
+    height: 2em;
 }
 
-input{
-    height: 1.5em;
-    width: 100%;
-}
-
-
-@media screen and (max-width: 768px){
-
-    .header > ul{
-        flex-wrap: wrap;
-    }
-
+@media screen and (max-width: 768px) {
 
 
     .inputContainer input + input {
         margin-left: 0;
     }
 
-  input{
+    input {
         display: inline-block;
         width: 100%;
     }

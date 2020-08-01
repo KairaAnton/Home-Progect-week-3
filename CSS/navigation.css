@@ -2,44 +2,12 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
+    background-image: url("../image/Veranda11.jpg");
+    background-repeat: no-repeat;
 }
-
-
-.header > ul{
-    display: flex;
-    justify-content: space-evenly;
-    min-height: 60px;
-    background-color: blue;
-}
-
-.header > ul > li{
-    display: flex;
-    height: 100%;
-    transition-duration: 0.5s;
-    width: 100%;
-}
-
-.header > ul > li > a{
-    display: inline-block;
-    width: 100%;
-    text-decoration: none;
-    padding: 25px;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.header > ul > li:hover{
-    background-color: #2690d4;
-
-}
-
-
-
 
 .headerNavBar{
-    height: 90px;
+    padding: 30px 60px;
     display: flex;
     justify-content: space-between;
     background-color: #333333;
@@ -70,13 +38,12 @@ body{
 }
 
 .buttonNavBar{
-    height: 40px;
-    width: 120px;
+    text-decoration: none;
+    padding: 20px 40px;
     border: 2px solid white;
     border-radius: 5px;
     background-color: #333333;
     color: white;
-    margin-right: 60px;
     font-weight: bold;
 
 }
@@ -84,9 +51,9 @@ body{
 @media screen and (max-width: 768px){
 
     .headerNavBar{
-        height: 200px;
+        min-height: 200px;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: baseline;
 
     }

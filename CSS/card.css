@@ -6,48 +6,6 @@
 
 
 
-
-
-.header > ul{
-    display: flex;
-    justify-content: space-evenly;
-    min-height: 60px;
-    background-color: blue;
-}
-
-.header > ul > li{
-    display: flex;
-    height: 100%;
-    transition-duration: 0.5s;
-    width: 100%;
-}
-
-.header > ul > li > a{
-    display: inline-block;
-    width: 100%;
-    text-decoration: none;
-    padding: 25px;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.header > ul > li:hover{
-    background-color: #2690d4;
-
-}
-
-
-
-
-
-
-
-
-
-
-
 .container{
     display: var( --main-display);
     flex-wrap: wrap;

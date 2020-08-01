@@ -11,66 +11,54 @@
 <body>
 
 
-<div class="header">
-    <ul>
-        <li><a href="./navigationAll.html">Home</a></li>
-        <li><a href="./navigation.html">Navigation</a></li>
-        <li><a href="./card.html">Card</a></li>
-        <li><a href="./contactForm.html">Contact Form</a></li>
-        <li><a href="./responsiveSite.html">Responsive Site</a></li>
-    </ul>
-</div>
+<div class="background">
+    <div class="contactFormContainer">
 
-    <div class="background">
-<div class="contactFormContainer">
+        <h1>Contact form</h1>
 
-    <h1>Contact form</h1>
+        <p>Please fill in your information and we'll be sending your order.</p>
 
-    <p>Please fill in your information and we'll be sending your order.</p>
+        <form inputmode="" class="formContainer">
 
-    <form inputmode="" class="formContainer">
-        <label>
-            Your name  <input  class="formYourName" type="text"  placeholder="first name"></label><label><input  class="formYourName" type="text" placeholder="last name">
-        </label>
+            <div class="inputContainer"> <span class="textContainer">Your name</span> <div class="childYourName"><input class="formYourName" type="text" placeholder="first name">
+                <input class="formYourName" type="text" placeholder="last name"></div></div>
+                    <div class="inputContainer"> <span class="textContainer">Your email</span> <div class="childYourEmail"><input class="formYourEmail" type="email"
+                                                                   placeholder="your_mail.com"></div></div>
 
-        <label>
-            Your email   <input class="formYourEmail" type="email"  placeholder="your_mail.com">
-        </label>
+            <div class="inputContainer">  <span class="textContainer">Phone *</span> <div class="childPhone"><input class="formPhone" type="text" maxlength="3"
+                                                                placeholder="000"> <input class="formPhone" type="text"
+                                                                                          maxlength="3"
+                                                                                          placeholder="000">
+
+                        <input class="formPhone" type="text" maxlength="4" placeholder="0000"></div></div>
 
 
-        <label>
-            Phone *      <input class="formPhone" type="text" maxlength="3" placeholder="000"></label><label><input class="formPhone" type="text" maxlength="3" placeholder="000"></label>  <label><input class="formPhone" type="text" maxlength="4" placeholder="0000"></label>
+            <div class="inputContainer"><span class="textContainer">Message subject * </span> <select class="multiselect" name="subject">
 
-        <label>
-        Message subject * <select class="multiselect" name="subject">
+                            <option value="" disabled selected>Other</option>
+                            <option value="problem">Problem</option>
+                            <option value="work">Work</option>
+                            <option value="invitation">Invitation</option>
+                            <option value="textbooks">Textbooks</option>
 
-                                    <option value="" disabled selected>Other</option>
-                                    <option value="problem">Problem</option>
-                                    <option value="work">Work</option>
-                                    <option value="invitation">Invitation</option>
-                                    <option value="textbooks">Textbooks</option>
-
-                           </select>
-        </label>
-
-        <label>
-            Message * <textarea name="text" id="massageForm" cols="30" rows="5"></textarea>
-        </label>
-
-        <div class="lineContainer">
-        </div>
-
-        <label>
-            <input class="submitButton" type="submit" value="SUBMIT FORM">
-        </label>
-
-    </form>
+                        </select>
+                        </div>
 
 
+            <div class="inputContainer"><span class="textContainer">Message *</span> <textarea class="textareaContainer" name="text" id="massageForm" cols="30" rows="5"></textarea></div>
 
 
+                        <div class="lineContainer">
+                        </div>
 
-</div>
+
+                        <div class="buttonContainer"><input class="submitButton" type="submit" value="SUBMIT FORM"></div>
+
+
+        </form>
+
+
+    </div>
 </div>
 
 </body>
